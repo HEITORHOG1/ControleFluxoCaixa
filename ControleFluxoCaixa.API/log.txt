@@ -1,0 +1,79 @@
+2023-05-30 20:23:43.871 -03:00 [INF] Now listening on: https://localhost:7101
+2023-05-30 20:23:43.881 -03:00 [INF] Now listening on: http://localhost:5101
+2023-05-30 20:23:43.892 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-30 20:23:43.895 -03:00 [INF] Hosting environment: Development
+2023-05-30 20:23:43.897 -03:00 [INF] Content root path: D:\Projetos\Azure\ControleFluxoCaixa\ControleFluxoCaixa.API\
+2023-05-30 20:23:44.379 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7101/swagger/index.html - -
+2023-05-30 20:23:44.917 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7101/_framework/aspnetcore-browser-refresh.js - -
+2023-05-30 20:23:44.926 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7101/_framework/aspnetcore-browser-refresh.js - - - 200 12014 application/javascript;+charset=utf-8 7.9267ms
+2023-05-30 20:23:44.927 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7101/swagger/index.html - - - 200 - text/html;charset=utf-8 554.9543ms
+2023-05-30 20:23:45.048 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7101/_vs/browserLink - -
+2023-05-30 20:23:45.078 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7101/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 29.1921ms
+2023-05-30 20:23:45.444 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7101/swagger/v1/swagger.json - -
+2023-05-30 20:23:45.621 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7101/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 177.2654ms
+2023-05-30 20:23:53.799 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7101/api/Consolidado/ListarConsolidadoDiario/2020020202 - -
+2023-05-30 20:23:53.845 -03:00 [INF] Executing endpoint 'ControleFluxoCaixa.API.Controllers.ConsolidadoDiarioController.ListarConsolidadoDiario (ControleFluxoCaixa.API)'
+2023-05-30 20:23:53.901 -03:00 [INF] Route matched with {action = "ListarConsolidadoDiario", controller = "ConsolidadoDiario"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListarConsolidadoDiario(System.String) on controller ControleFluxoCaixa.API.Controllers.ConsolidadoDiarioController (ControleFluxoCaixa.API).
+2023-05-30 20:23:54.121 -03:00 [INF] Executing action method ControleFluxoCaixa.API.Controllers.ConsolidadoDiarioController.ListarConsolidadoDiario (ControleFluxoCaixa.API) - Validation state: "Valid"
+2023-05-30 20:23:54.131 -03:00 [INF] Lançamento adicionado: 2020020202
+2023-05-30 20:23:54.269 -03:00 [ERR] Erro ao listar consolidado diário
+System.FormatException: String '2020020202' was not recognized as a valid DateTime.
+   at System.Convert.ToDateTime(String value)
+   at ControleFluxoCaixa.API.Controllers.ConsolidadoDiarioController.ListarConsolidadoDiario(String data) in D:\Projetos\Azure\ControleFluxoCaixa\ControleFluxoCaixa.API\Controllers\ConsolidadoDiarioController.cs:line 26
+2023-05-30 20:23:54.282 -03:00 [INF] Executed action method ControleFluxoCaixa.API.Controllers.ConsolidadoDiarioController.ListarConsolidadoDiario (ControleFluxoCaixa.API), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 145.5121ms.
+2023-05-30 20:23:54.308 -03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-05-30 20:23:54.321 -03:00 [INF] Executed action ControleFluxoCaixa.API.Controllers.ConsolidadoDiarioController.ListarConsolidadoDiario (ControleFluxoCaixa.API) in 394.7464ms
+2023-05-30 20:23:54.324 -03:00 [INF] Executed endpoint 'ControleFluxoCaixa.API.Controllers.ConsolidadoDiarioController.ListarConsolidadoDiario (ControleFluxoCaixa.API)'
+2023-05-30 20:23:54.336 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7101/api/Consolidado/ListarConsolidadoDiario/2020020202 - - - 500 - text/plain;+charset=utf-8 536.3637ms
+2023-05-30 21:35:27.382 -03:00 [INF] Now listening on: https://localhost:7101
+2023-05-30 21:35:27.391 -03:00 [INF] Now listening on: http://localhost:5101
+2023-05-30 21:35:27.402 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-30 21:35:27.405 -03:00 [INF] Hosting environment: Development
+2023-05-30 21:35:27.407 -03:00 [INF] Content root path: D:\Projetos\Azure\ControleFluxoCaixa\ControleFluxoCaixa.API\
+2023-05-30 21:35:28.252 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7101/swagger/index.html - -
+2023-05-30 21:35:28.868 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7101/_framework/aspnetcore-browser-refresh.js - -
+2023-05-30 21:35:28.875 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7101/swagger/index.html - - - 200 - text/html;charset=utf-8 628.5666ms
+2023-05-30 21:35:28.888 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7101/_framework/aspnetcore-browser-refresh.js - - - 200 12014 application/javascript;+charset=utf-8 19.6693ms
+2023-05-30 21:35:28.975 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7101/_vs/browserLink - -
+2023-05-30 21:35:29.009 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7101/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 33.6393ms
+2023-05-30 21:35:29.358 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7101/swagger/v1/swagger.json - -
+2023-05-30 21:35:29.599 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7101/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 241.4446ms
+2023-05-30 21:35:45.993 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7101/api/Lancamento/AdicionarLancamento application/json 98
+2023-05-30 21:35:46.034 -03:00 [INF] Executing endpoint 'ControleFluxoCaixa.API.Controllers.LancamentoController.AdicionarLancamento (ControleFluxoCaixa.API)'
+2023-05-30 21:35:46.087 -03:00 [INF] Route matched with {action = "AdicionarLancamento", controller = "Lancamento"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AdicionarLancamento(ControleFluxoCaixa.CQRS.COMANDS.Lancamentos.AdicionarLancamentos.AdicionarLancamentoRequest) on controller ControleFluxoCaixa.API.Controllers.LancamentoController (ControleFluxoCaixa.API).
+2023-05-30 21:35:46.436 -03:00 [INF] Executing action method ControleFluxoCaixa.API.Controllers.LancamentoController.AdicionarLancamento (ControleFluxoCaixa.API) - Validation state: "Valid"
+2023-05-30 21:35:48.323 -03:00 [INF] Executed action method ControleFluxoCaixa.API.Controllers.LancamentoController.AdicionarLancamento (ControleFluxoCaixa.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1874.4565ms.
+2023-05-30 21:35:48.354 -03:00 [INF] Executing OkObjectResult, writing value of type 'ControleFluxoCaixa.DOMAIN.Model.Response'.
+2023-05-30 21:35:48.399 -03:00 [INF] Executed action ControleFluxoCaixa.API.Controllers.LancamentoController.AdicionarLancamento (ControleFluxoCaixa.API) in 2280.1089ms
+2023-05-30 21:35:48.403 -03:00 [INF] Executed endpoint 'ControleFluxoCaixa.API.Controllers.LancamentoController.AdicionarLancamento (ControleFluxoCaixa.API)'
+2023-05-30 21:35:48.419 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7101/api/Lancamento/AdicionarLancamento application/json 98 - 200 - application/json;+charset=utf-8 2426.3188ms
+2023-05-30 21:36:01.715 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7101/api/Consolidado/ListarConsolidadoDiario/2023-05-31 - -
+2023-05-30 21:36:01.732 -03:00 [INF] Executing endpoint 'ControleFluxoCaixa.API.Controllers.ConsolidadoDiarioController.ListarConsolidadoDiario (ControleFluxoCaixa.API)'
+2023-05-30 21:36:01.740 -03:00 [INF] Route matched with {action = "ListarConsolidadoDiario", controller = "ConsolidadoDiario"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListarConsolidadoDiario(System.String) on controller ControleFluxoCaixa.API.Controllers.ConsolidadoDiarioController (ControleFluxoCaixa.API).
+2023-05-30 21:36:01.775 -03:00 [INF] Executing action method ControleFluxoCaixa.API.Controllers.ConsolidadoDiarioController.ListarConsolidadoDiario (ControleFluxoCaixa.API) - Validation state: "Valid"
+2023-05-30 21:36:01.781 -03:00 [INF] ListarConsolidadoDiario: 2023-05-31
+2023-05-30 21:36:02.568 -03:00 [INF] Executed action method ControleFluxoCaixa.API.Controllers.ConsolidadoDiarioController.ListarConsolidadoDiario (ControleFluxoCaixa.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 790.8638ms.
+2023-05-30 21:36:02.587 -03:00 [INF] Executing OkObjectResult, writing value of type 'ControleFluxoCaixa.DOMAIN.Model.Response'.
+2023-05-30 21:36:02.611 -03:00 [INF] Executed action ControleFluxoCaixa.API.Controllers.ConsolidadoDiarioController.ListarConsolidadoDiario (ControleFluxoCaixa.API) in 857.3874ms
+2023-05-30 21:36:02.614 -03:00 [INF] Executed endpoint 'ControleFluxoCaixa.API.Controllers.ConsolidadoDiarioController.ListarConsolidadoDiario (ControleFluxoCaixa.API)'
+2023-05-30 21:36:02.616 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7101/api/Consolidado/ListarConsolidadoDiario/2023-05-31 - - - 200 - application/json;+charset=utf-8 901.1286ms
+2023-05-30 21:36:09.648 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7101/api/Consolidado/ListarConsolidadoDiario/2023-05-30 - -
+2023-05-30 21:36:09.659 -03:00 [INF] Executing endpoint 'ControleFluxoCaixa.API.Controllers.ConsolidadoDiarioController.ListarConsolidadoDiario (ControleFluxoCaixa.API)'
+2023-05-30 21:36:09.662 -03:00 [INF] Route matched with {action = "ListarConsolidadoDiario", controller = "ConsolidadoDiario"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListarConsolidadoDiario(System.String) on controller ControleFluxoCaixa.API.Controllers.ConsolidadoDiarioController (ControleFluxoCaixa.API).
+2023-05-30 21:36:09.693 -03:00 [INF] Executing action method ControleFluxoCaixa.API.Controllers.ConsolidadoDiarioController.ListarConsolidadoDiario (ControleFluxoCaixa.API) - Validation state: "Valid"
+2023-05-30 21:36:09.697 -03:00 [INF] ListarConsolidadoDiario: 2023-05-30
+2023-05-30 21:36:09.742 -03:00 [INF] Executed action method ControleFluxoCaixa.API.Controllers.ConsolidadoDiarioController.ListarConsolidadoDiario (ControleFluxoCaixa.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 47.4424ms.
+2023-05-30 21:36:09.755 -03:00 [INF] Executing OkObjectResult, writing value of type 'ControleFluxoCaixa.DOMAIN.Model.Response'.
+2023-05-30 21:36:09.758 -03:00 [INF] Executed action ControleFluxoCaixa.API.Controllers.ConsolidadoDiarioController.ListarConsolidadoDiario (ControleFluxoCaixa.API) in 81.9493ms
+2023-05-30 21:36:09.760 -03:00 [INF] Executed endpoint 'ControleFluxoCaixa.API.Controllers.ConsolidadoDiarioController.ListarConsolidadoDiario (ControleFluxoCaixa.API)'
+2023-05-30 21:36:09.764 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7101/api/Consolidado/ListarConsolidadoDiario/2023-05-30 - - - 200 - application/json;+charset=utf-8 115.8130ms
+2023-05-30 21:36:17.874 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7101/api/Consolidado/ListarConsolidadoDiario/2023-05-31 - -
+2023-05-30 21:36:17.887 -03:00 [INF] Executing endpoint 'ControleFluxoCaixa.API.Controllers.ConsolidadoDiarioController.ListarConsolidadoDiario (ControleFluxoCaixa.API)'
+2023-05-30 21:36:17.889 -03:00 [INF] Route matched with {action = "ListarConsolidadoDiario", controller = "ConsolidadoDiario"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListarConsolidadoDiario(System.String) on controller ControleFluxoCaixa.API.Controllers.ConsolidadoDiarioController (ControleFluxoCaixa.API).
+2023-05-30 21:36:17.919 -03:00 [INF] Executing action method ControleFluxoCaixa.API.Controllers.ConsolidadoDiarioController.ListarConsolidadoDiario (ControleFluxoCaixa.API) - Validation state: "Valid"
+2023-05-30 21:36:17.923 -03:00 [INF] ListarConsolidadoDiario: 2023-05-31
+2023-05-30 21:36:17.990 -03:00 [INF] Executed action method ControleFluxoCaixa.API.Controllers.ConsolidadoDiarioController.ListarConsolidadoDiario (ControleFluxoCaixa.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 69.3614ms.
+2023-05-30 21:36:18.009 -03:00 [INF] Executing OkObjectResult, writing value of type 'ControleFluxoCaixa.DOMAIN.Model.Response'.
+2023-05-30 21:36:18.012 -03:00 [INF] Executed action ControleFluxoCaixa.API.Controllers.ConsolidadoDiarioController.ListarConsolidadoDiario (ControleFluxoCaixa.API) in 109.5479ms
+2023-05-30 21:36:18.016 -03:00 [INF] Executed endpoint 'ControleFluxoCaixa.API.Controllers.ConsolidadoDiarioController.ListarConsolidadoDiario (ControleFluxoCaixa.API)'
+2023-05-30 21:36:18.019 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7101/api/Consolidado/ListarConsolidadoDiario/2023-05-31 - - - 200 - application/json;+charset=utf-8 144.3738ms
