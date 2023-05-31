@@ -8,7 +8,6 @@ using ControleFluxoCaixa.INFRA.Repositories;
 using ControleFluxoCaixa.INFRA.Repositories.Base;
 using ControleFluxoCaixa.INFRA.Transactions;
 using MediatR;
-using Microsoft.EntityFrameworkCore;
 using System.Reflection;
 
 namespace ControleFluxoCaixa.API
