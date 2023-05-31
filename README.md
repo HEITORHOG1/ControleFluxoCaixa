@@ -51,7 +51,7 @@ Para começar com o sistema ControleFluxoCaixa, siga estas etapas:
 ## Configuração
 
 1. Instale o .NET Core SDK versão X: [link para download](https://dotnet.microsoft.com/download)
-2. Clone o repositório: `git clone [https://github.com/seu-usuario/seu-repositorio.git](https://github.com/HEITORHOG1/ControleFluxoCaixa)`
+2. Clone o repositório: `git clone https://github.com/HEITORHOG1/ControleFluxoCaixa`
 3. Abra o arquivo de solução `ControleFluxoCaixa.sln` em seu IDE preferido.
 4. Compile a solução para restaurar as dependências e compilar o código.
 5. Execute o sistema iniciando o projeto `ControleFluxoCaixa.API`.
