@@ -119,9 +119,8 @@ Por favor, observe que este arquivo README.md é um modelo e você pode precisar
 
 
 
+![Diagrama]([/diagrama.jpg](https://github-production-user-asset-6210df.s3.amazonaws.com/61200900/243025729-448f5805-9ca4-4b24-bedf-949e852067ae.png))
 
-
-![Diagrama desenho da arquitetura](https://github.com/HEITORHOG1/ControleFluxoCaixa/assets/61200900/448f5805-9ca4-4b24-bedf-949e852067ae)
 
 
 
