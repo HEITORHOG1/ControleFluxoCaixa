@@ -1,4 +1,5 @@
-﻿using ControleFluxoCaixa.DOMAIN.Interfaces;
+﻿using ControleFluxoCaixa.CQRS.Validacao;
+using ControleFluxoCaixa.DOMAIN.Interfaces;
 using ControleFluxoCaixa.DOMAIN.Model;
 using MediatR;
 using prmToolkit.NotificationPattern;
@@ -19,30 +20,20 @@ namespace ControleFluxoCaixa.CQRS.COMANDS.Lancamentos.AdicionarLancamentos
 
         public async Task<Response> Handle(AdicionarLancamentoRequest request, CancellationToken cancellationToken)
         {
-            //Validar se o requeste veio preenchido
-            if (request == null)
+            // Instancia o validador
+            var validator = new AdicionarLancamentoValidator();
+
+            // Valida a requisição
+            var validationResult = await validator.ValidateAsync(request, cancellationToken);
+
+            // Se não passou na validação, adiciona as falhas como notificações
+            if (!validationResult.IsValid)
             {
-                AddNotification("Lancamento", "Lancamento não pode estar em branco... Preencha um Lancamento");
-                return new Response(this);
-            }
-            if (request.Valor == decimal.MinValue)
-            {
-                AddNotification("Valor", "Valor não pode estar em branco... Preencha um Valor");
-                return new Response(this);
-            }
-            if (request.Tipo == null)
-            {
-                AddNotification("Tipo", "Tipo não pode estar em branco... Preencha um Tipo");
-                return new Response(this);
-            }
-            if (request.descrição == null)
-            {
-                AddNotification("Descricao", "Descricao não pode estar em branco... Preencha uma Descricao");
-                return new Response(this);
-            }
-            if (request.Data == null)
-            {
-                AddNotification("Data", "Data não pode estar em branco... Preencha uma Data");
+                foreach (var error in validationResult.Errors)
+                {
+                    AddNotification(error.PropertyName, error.ErrorMessage);
+                }
+
                 return new Response(this);
             }
             Lancamento lancamento = new(request.Data, request.descrição, request.Valor,request.Tipo);

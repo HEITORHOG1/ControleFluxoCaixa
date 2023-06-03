@@ -3,6 +3,7 @@ using MediatR;
 using prmToolkit.NotificationPattern;
 using ControleFluxoCaixa.DOMAIN.Model;
 using Response = ControleFluxoCaixa.DOMAIN.Model.Response;
+using ControleFluxoCaixa.CQRS.Validacao;
 
 namespace ControleFluxoCaixa.CQRS.COMANDS.Lancamentos.AlterarLancamentos
 {
@@ -19,9 +20,20 @@ namespace ControleFluxoCaixa.CQRS.COMANDS.Lancamentos.AlterarLancamentos
 
         public async Task<Response> Handle(AlterarLancamentoRequest request, CancellationToken cancellationToken)
         {
-            if (request == null)
+            // Instancia o validador
+            var validator = new AlterarLancamentoValidator();
+
+            // Valida a requisição
+            var validationResult = await validator.ValidateAsync(request, cancellationToken);
+
+            // Se não passou na validação, adiciona as falhas como notificações
+            if (!validationResult.IsValid)
             {
-                AddNotification("AlterarLancamentoRequest", "request");
+                foreach (var error in validationResult.Errors)
+                {
+                    AddNotification(error.PropertyName, error.ErrorMessage);
+                }
+
                 return new Response(this);
             }
 
@@ -30,17 +42,6 @@ namespace ControleFluxoCaixa.CQRS.COMANDS.Lancamentos.AlterarLancamentos
             lancamento.AlterarLancamento(request.Id, request.Data, request.Descricao, request.Valor);
 
             var retornoExist = _repositoryLancamento.Listar().Where(x => x.Id == request.Id);
-            if (!retornoExist.Any())
-            {
-                AddNotification("AlterarLancamentoRequest", "Lancamento não encontrado");
-                return new Response(this);
-            }
-
-            if (lancamento == null)
-            {
-                AddNotification("AlterarLancamentoRequest", "Lancamento == null");
-                return new Response(this);
-            }
 
             lancamento = _repositoryLancamento.Editar(lancamento);
 
