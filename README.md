@@ -4,6 +4,8 @@ Projeto feito na ultima versão .net 8.0 usando visual studio 2022 preview.
 
 O Controle de Fluxo de Caixa é uma API que permite a um comerciante controlar o seu fluxo de caixa diário com os lançamentos (débitos e créditos) e disponibiliza um relatório com o saldo diário consolidado.
 
+Projeto funciona com banco de dados MySql e sem banco de dados salvando os dados em um arquivo json simulando NonSql,separadas nas controllers
+
 ## Requisitos de Negócio
 
 - Serviço de controle de lançamentos
@@ -59,6 +61,11 @@ Para começar com o sistema ControleFluxoCaixa, siga estas etapas:
 5. Compile a solução para restaurar as dependências e compilar o código.
 6. Execute o sistema iniciando o projeto `ControleFluxoCaixa.API`.
 7. Acesse os endpoints da API por meio das rotas fornecidas e teste a funcionalidade usando uma ferramenta como o Postman ou um navegador da web.
+
+
+## Configuração sem Banco de Dados
+Basta rodar ele cria automaticamente o arquivo 
+
 
 ## Configuração do Banco de Dados
 
