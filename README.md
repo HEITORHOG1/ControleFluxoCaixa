@@ -1,6 +1,7 @@
 # Controle de Fluxo de Caixa
 
-Projeto feito na ultima versão .net 8.0 usando visual studio 2022 preview
+Projeto feito na ultima versão .net 8.0 usando visual studio 2022 preview.
+
 O Controle de Fluxo de Caixa é uma API que permite a um comerciante controlar o seu fluxo de caixa diário com os lançamentos (débitos e créditos) e disponibiliza um relatório com o saldo diário consolidado.
 
 ## Requisitos de Negócio
