@@ -360,3 +360,26 @@ FluentValidation.ValidationException: Validation failed:
 2023-06-02 23:29:19.541 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7101/_vs/browserLink - 200 null text/javascript; charset=UTF-8 27.5397ms
 2023-06-02 23:29:19.854 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7101/swagger/v1/swagger.json - null null
 2023-06-02 23:29:20.007 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7101/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 152.9578ms
+2023-06-04 17:42:21.243 -03:00 [WRN] The WebRootPath was not found: D:\Projetos\ControleFluxoCaixa\ControleFluxoCaixa.API\wwwroot. Static files may be unavailable.
+2023-06-04 17:42:21.487 -03:00 [INF] Now listening on: https://localhost:7101
+2023-06-04 17:42:21.493 -03:00 [INF] Now listening on: http://localhost:5101
+2023-06-04 17:42:21.507 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-04 17:42:21.511 -03:00 [INF] Hosting environment: Development
+2023-06-04 17:42:21.514 -03:00 [INF] Content root path: D:\Projetos\ControleFluxoCaixa\ControleFluxoCaixa.API
+2023-06-04 17:42:22.562 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7101/swagger/index.html - null null
+2023-06-04 17:42:23.049 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7101/swagger/index.html - 200 null text/html;charset=utf-8 488.8508ms
+2023-06-04 17:42:23.152 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7101/_framework/aspnetcore-browser-refresh.js - null null
+2023-06-04 17:42:23.152 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7101/_vs/browserLink - null null
+2023-06-04 17:42:23.173 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7101/_framework/aspnetcore-browser-refresh.js - 200 12011 application/javascript; charset=utf-8 21.8412ms
+2023-06-04 17:42:23.234 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7101/_vs/browserLink - 200 null text/javascript; charset=UTF-8 82.2665ms
+2023-06-04 17:42:23.606 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7101/swagger/v1/swagger.json - null null
+2023-06-04 17:42:23.807 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7101/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 201.163ms
+2023-06-04 17:42:30.718 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7101/api/LancamentoSimulado/ListarLancamentoSimulado - null null
+2023-06-04 17:42:30.759 -03:00 [INF] Executing endpoint 'ControleFluxoCaixa.API.Controllers.LancamentoSimuladoController.ListarLancamentoSimulado (ControleFluxoCaixa.API)'
+2023-06-04 17:42:30.809 -03:00 [INF] Route matched with {action = "ListarLancamentoSimulado", controller = "LancamentoSimulado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListarLancamentoSimulado() on controller ControleFluxoCaixa.API.Controllers.LancamentoSimuladoController (ControleFluxoCaixa.API).
+2023-06-04 17:42:31.004 -03:00 [INF] Executing action method ControleFluxoCaixa.API.Controllers.LancamentoSimuladoController.ListarLancamentoSimulado (ControleFluxoCaixa.API) - Validation state: "Valid"
+2023-06-04 17:42:31.016 -03:00 [INF] Executed action method ControleFluxoCaixa.API.Controllers.LancamentoSimuladoController.ListarLancamentoSimulado (ControleFluxoCaixa.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 4.1664ms.
+2023-06-04 17:42:31.046 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ControleFluxoCaixa.DOMAIN.Model.LancamentoSimulacao, ControleFluxoCaixa.DOMAIN, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-06-04 17:42:31.077 -03:00 [INF] Executed action ControleFluxoCaixa.API.Controllers.LancamentoSimuladoController.ListarLancamentoSimulado (ControleFluxoCaixa.API) in 242.2039ms
+2023-06-04 17:42:31.079 -03:00 [INF] Executed endpoint 'ControleFluxoCaixa.API.Controllers.LancamentoSimuladoController.ListarLancamentoSimulado (ControleFluxoCaixa.API)'
+2023-06-04 17:42:31.083 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7101/api/LancamentoSimulado/ListarLancamentoSimulado - 200 null application/json; charset=utf-8 365.2017ms

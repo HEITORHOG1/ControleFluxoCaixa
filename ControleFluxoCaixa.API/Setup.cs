@@ -3,7 +3,6 @@ using ControleFluxoCaixa.CQRS.COMANDS.Lancamentos;
 using ControleFluxoCaixa.CQRS.COMANDS.Lancamentos.AdicionarLancamentos;
 using ControleFluxoCaixa.CQRS.COMANDS.Lancamentos.AlterarLancamentos;
 using ControleFluxoCaixa.CQRS.COMANDS.Lancamentos.DeletarLancamentos;
-using ControleFluxoCaixa.CQRS.COMANDS.Lancamentos.Simulado.AdicionarLancamentosSimulado;
 using ControleFluxoCaixa.CQRS.QUERIES.Lancamentos.ConsolidadoDiario;
 using ControleFluxoCaixa.CQRS.QUERIES.Lancamentos.ListarLancamentos;
 using ControleFluxoCaixa.DOMAIN.Interfaces;

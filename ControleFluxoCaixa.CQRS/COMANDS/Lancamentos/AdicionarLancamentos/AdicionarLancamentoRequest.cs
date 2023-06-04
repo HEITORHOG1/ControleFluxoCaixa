@@ -1,6 +1,6 @@
 ﻿using ControleFluxoCaixa.DOMAIN.Model;
 using MediatR;
-using FluentValidation;
+
 
 namespace ControleFluxoCaixa.CQRS.COMANDS.Lancamentos.AdicionarLancamentos
 {
