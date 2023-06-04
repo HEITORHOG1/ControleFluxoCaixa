@@ -1,5 +1,6 @@
 # Controle de Fluxo de Caixa
 
+Projeto feito na ultima versão .net 8.0 usando visual studio 2022 preview
 O Controle de Fluxo de Caixa é uma API que permite a um comerciante controlar o seu fluxo de caixa diário com os lançamentos (débitos e créditos) e disponibiliza um relatório com o saldo diário consolidado.
 
 ## Requisitos de Negócio
@@ -50,12 +51,13 @@ Para começar com o sistema ControleFluxoCaixa, siga estas etapas:
 
 ## Configuração
 
-1. Instale o .NET Core SDK versão 8.0X: [link para download]((https://dotnet.microsoft.com/pt-br/download/dotnet/8.0)) 
-2. Clone o repositório: `git clone https://github.com/HEITORHOG1/ControleFluxoCaixa`
-3. Abra o arquivo de solução `ControleFluxoCaixa.sln` em seu IDE preferido.
-4. Compile a solução para restaurar as dependências e compilar o código.
-5. Execute o sistema iniciando o projeto `ControleFluxoCaixa.API`.
-6. Acesse os endpoints da API por meio das rotas fornecidas e teste a funcionalidade usando uma ferramenta como o Postman ou um navegador da web.
+1. Instale o .NET Core SDK versão 8.0X: [link para download][(https://dotnet.microsoft.com/pt-br/download/dotnet/8.0)]
+2. Instale o Visual studio 2022 preview [link para download] [(https://visualstudio.microsoft.com/pt-br/downloads/)]
+3. Clone o repositório: `git clone https://github.com/HEITORHOG1/ControleFluxoCaixa`
+4. Abra o arquivo de solução `ControleFluxoCaixa.sln` em seu IDE preferido.
+5. Compile a solução para restaurar as dependências e compilar o código.
+6. Execute o sistema iniciando o projeto `ControleFluxoCaixa.API`.
+7. Acesse os endpoints da API por meio das rotas fornecidas e teste a funcionalidade usando uma ferramenta como o Postman ou um navegador da web.
 
 ## Configuração do Banco de Dados
 
