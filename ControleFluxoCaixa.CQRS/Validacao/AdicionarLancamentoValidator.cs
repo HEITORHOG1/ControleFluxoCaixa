@@ -10,6 +10,9 @@ namespace ControleFluxoCaixa.CQRS.Validacao
 {
     public class AdicionarLancamentoValidator : AbstractValidator<AdicionarLancamentoRequest>
     {
+        /// <summary>
+        /// 
+        /// </summary>
         public AdicionarLancamentoValidator()
         {
             RuleFor(x => x.Data)
