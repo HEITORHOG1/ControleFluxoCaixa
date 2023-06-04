@@ -54,8 +54,8 @@ Para começar com o sistema ControleFluxoCaixa, siga estas etapas:
 
 ## Configuração
 
-1. Instale o .NET Core SDK versão 8.0X: [link para download][(https://dotnet.microsoft.com/pt-br/download/dotnet/8.0)]
-2. Instale o Visual studio 2022 preview [link para download] [(https://visualstudio.microsoft.com/pt-br/downloads/)]
+1. Instale o .NET Core SDK versão 8.0: [link para download][(https://dotnet.microsoft.com/pt-br/download/dotnet/8.0)]
+2. Instale o Visual studio 2022 preview: [link para download] [(https://visualstudio.microsoft.com/pt-br/downloads/)]
 3. Clone o repositório: `git clone https://github.com/HEITORHOG1/ControleFluxoCaixa`
 4. Abra o arquivo de solução `ControleFluxoCaixa.sln` em seu IDE preferido.
 5. Compile a solução para restaurar as dependências e compilar o código.
