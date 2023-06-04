@@ -1,4 +1,5 @@
-﻿using ControleFluxoCaixa.DOMAIN.Interfaces;
+﻿using ControleFluxoCaixa.CQRS.Validacao;
+using ControleFluxoCaixa.DOMAIN.Interfaces;
 using ControleFluxoCaixa.DOMAIN.Model;
 using MediatR;
 using prmToolkit.NotificationPattern;
@@ -19,19 +20,24 @@ namespace ControleFluxoCaixa.CQRS.COMANDS.Lancamentos.DeletarLancamentos
 
         public async Task<Response> Handle(RemoverLancamentoResquest request, CancellationToken cancellationToken)
         {
-            if (request == null)
+            // Instancia o validador
+            var validator = new RemoverLancamentoValidator();
+
+            // Valida a requisição
+            var validationResult = await validator.ValidateAsync(request, cancellationToken);
+
+            // Se não passou na validação, adiciona as falhas como notificações
+            if (!validationResult.IsValid)
             {
-                AddNotification("RemoverLancamentoResquest", "");
+                foreach (var error in validationResult.Errors)
+                {
+                    AddNotification(error.PropertyName, error.ErrorMessage);
+                }
+
                 return new Response(this);
             }
 
             Lancamento lancamento = _repositoryLancamento.ObterPorId(request.Id);
-
-            if (lancamento == null)
-            {
-                AddNotification("RemoverLancamentoResquest", "");
-                return new Response(this);
-            }
 
             _repositoryLancamento.Remover(lancamento);
 
