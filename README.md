@@ -64,7 +64,7 @@ Para começar com o sistema ControleFluxoCaixa, siga estas etapas:
 
 
 ## Configuração sem Banco de Dados
-Basta rodar ele cria automaticamente o arquivo 
+Basta rodar ele cria automaticamente o arquivo, apos rodar os metodos da controller LancamentoSimulado
 
 
 ## Configuração do Banco de Dados
